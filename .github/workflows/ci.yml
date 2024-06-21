@@ -57,6 +57,7 @@ jobs:
       target: "${{ matrix.arch }}-unknown-linux-${{ matrix.libc }}"
       slug: "${{ matrix.arch }}-linux-${{ matrix.libc }}"
       arch: ${{ matrix.arch }}
+      sign: true
 
   build-windows:
     name: ${{ matrix.runtime }}
