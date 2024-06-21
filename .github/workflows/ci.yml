@@ -71,6 +71,7 @@ jobs:
       os: ${{ matrix.os }}
       runtime: ${{ matrix.runtime }}
       slug: "windows"
+      sign: true
 
   smoke-tests:
     name: ${{ matrix.runtime }}
