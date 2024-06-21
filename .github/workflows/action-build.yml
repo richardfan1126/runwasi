@@ -62,7 +62,7 @@ jobs:
         if: ${{ inputs.arch == 'x86_64' }}
       - name: Sign the binary
         if: ${{ inputs.runtime != 'common' && inputs.slug != 'windows' && inputs.sign }}
-        uses: containerd/runwasi/.github/workflows/action-sign.yml@main
+        uses: ./.github/workflows/action-sign.yml
         with:
           runtime: ${{ inputs.runtime }}
           os: ${{ inputs.os }}
