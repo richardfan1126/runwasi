@@ -50,7 +50,7 @@ jobs:
         runtime: ["common", "wasmtime", "wasmedge", "wasmer"]
         libc: ["musl", "gnu"]
         arch: ["x86_64", "aarch64"]
-    uses: github.com/containerd/runwasi/.github/workflows/action-build.yml@main
+    uses: containerd/runwasi/.github/workflows/action-build.yml@main
     with:
       os: ${{ matrix.os }}
       runtime: ${{ matrix.runtime }}
